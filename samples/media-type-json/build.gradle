@@ -1,11 +1,11 @@
-buildscript { // buildscript ´úÂë¿éÖĞ½Å±¾ÓÅÏÈÖ´ĞĞ
+buildscript { // buildscript ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ½Å±ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½
 
-	// ext ÓÃÓÚ¶¨Òå¶¯Ì¬ÊôĞÔ
+	// ext ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½å¶¯Ì¬ï¿½ï¿½ï¿½ï¿½
 	ext {
-		springBootVersion = '2.0.0.M2'
+		springBootVersion = '2.0.7.RELEASE'
 	}
 
-	// Ê¹ÓÃÁË Maven µÄÖĞÑë²Ö¿â£¨Ò²¿ÉÒÔÖ¸¶¨ÆäËû²Ö¿â£©
+	// Ê¹ï¿½ï¿½ï¿½ï¿½ Maven ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¿â£¨Ò²ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¿â£©
 	repositories {
 		//mavenCentral()
 		maven { url "https://repo.spring.io/snapshot" }
@@ -13,27 +13,27 @@ buildscript { // buildscript ´úÂë¿éÖĞ½Å±¾ÓÅÏÈÖ´ĞĞ
 		maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
 	}
 
-	// ÒÀÀµ¹ØÏµ
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ïµ
 	dependencies {
 
-		// classpath ÉùÃ÷ËµÃ÷ÁËÔÚÖ´ĞĞÆäÓàµÄ½Å±¾Ê±£¬ClassLoader ¿ÉÒÔÊ¹ÓÃÕâĞ©ÒÀÀµÏî
+		// classpath ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä½Å±ï¿½Ê±ï¿½ï¿½ClassLoader ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½Ğ©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
 	}
 }
 
-// Ê¹ÓÃ²å¼ş
+// Ê¹ï¿½Ã²ï¿½ï¿½
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
-// Ö¸¶¨ÁËÉú³ÉµÄ±àÒëÎÄ¼şµÄ°æ±¾£¬Ä¬ÈÏÊÇ´ò³ÉÁË jar °ü
+// Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÉµÄ±ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ä°æ±¾ï¿½ï¿½Ä¬ï¿½ï¿½ï¿½Ç´ï¿½ï¿½ï¿½ï¿½ jar ï¿½ï¿½
 version = '1.0.0'
 
-// Ö¸¶¨±àÒë .java ÎÄ¼şµÄ JDK °æ±¾
+// Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ .java ï¿½Ä¼ï¿½ï¿½ï¿½ JDK ï¿½æ±¾
 sourceCompatibility = 1.8
 
-// Ê¹ÓÃÁË Maven µÄÖĞÑë²Ö¿â£¨Ò²¿ÉÒÔÖ¸¶¨ÆäËû²Ö¿â£©
+// Ê¹ï¿½ï¿½ï¿½ï¿½ Maven ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¿â£¨Ò²ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¿â£©
 repositories {
 	//mavenCentral()
 	maven { url "https://repo.spring.io/snapshot" }
@@ -41,12 +41,12 @@ repositories {
 	maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
 }
 
-// ÒÀÀµ¹ØÏµ
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ïµ
 dependencies {
 
-	// ¸ÃÒÀÀµÓÃÓÚ±àÒë½×¶Î
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú±ï¿½ï¿½ï¿½×¶ï¿½
 	compile('org.springframework.boot:spring-boot-starter-web')
 
-	// ¸ÃÒÀÀµÓÃÓÚ²âÊÔ½×¶Î
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½Ô½×¶ï¿½
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
